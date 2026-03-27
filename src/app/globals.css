@@ -1,26 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-orange-primary: #f16b3a;
+  --color-navy-dark: #172335;
+  --color-navy-medium: #25314c;
+  --color-accent-blue: #0693e3;
+  --color-gray-light: #f5f5f5;
+  --font-poppins: "Poppins", sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-poppins);
+  background-color: #172335;
+  color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+/* Custom scrollbar for the horizontal timeline */
+.scrollbar-timeline {
+  scrollbar-width: thin;
+  scrollbar-color: #f16b3a #25314c;
+}
+
+.scrollbar-timeline::-webkit-scrollbar {
+  height: 8px;
+}
+
+.scrollbar-timeline::-webkit-scrollbar-track {
+  background: #25314c;
+  border-radius: 4px;
+}
+
+.scrollbar-timeline::-webkit-scrollbar-thumb {
+  background: #f16b3a;
+  border-radius: 4px;
+}
+
+.scrollbar-timeline::-webkit-scrollbar-thumb:hover {
+  background: #d4522a;
 }
