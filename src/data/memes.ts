@@ -207,7 +207,7 @@ export const MEMES: Meme[] = [
     year: 2007,
     month: 9,
     thumbnailUrl:
-      "https://i.kym-cdn.com/entries/icons/original/000/000/016/brittnee.jpg",
+      "https://zquared.com/wp-content/uploads/2024/09/cropped-Z-icon-32x32.png",
     kymUrl: "https://knowyourmeme.com/memes/leave-britney-alone",
   },
 
